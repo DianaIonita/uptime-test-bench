@@ -1,0 +1,49 @@
+service: uptime-test-bench
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-1
+  stage: ${opt:stage, env:USER, env:USERNAME}
+  stackName: ${self:provider.stage}-${self:service}
+  deploymentBucket: ${ssm:serverless-deployment-bucket}
+  environment:
+    IS_DEBUG_LOG_ENABLED: true
+
+plugins:
+  - serverless-export-env
+  - serverless-iam-roles-per-function
+  - serverless-jetpack
+  - serverless-plugin-aws-alerts
+  - serverless-prune-plugin
+  - serverless-pseudo-parameters
+
+custom:
+  alerts:
+    alarms:
+      - functionErrors
+      - functionThrottles
+      - functionInvocations
+      - testingFailureAlarm
+    topics:
+      alarm: ${cf:${self:provider.stage}-alerts.AlertsAlarmSNSTopicArn}
+    definitions:
+      testingFailureAlarm:
+        description: 'Something Failed Alarm'
+        namespace: 'uptime-test-bench'
+        metric: error-on-something
+        threshold: 1
+        statistic: Minimum
+        period: 60
+        evaluationPeriods: 1
+        datapointsToAlarm: 1
+        omitDefaultDimension: true
+        comparisonOperator: GreaterThanOrEqualToThreshold
+
+  prune:
+    automatic: true
+    number: 1
+
+functions:
+  publishMetric:
+    handler: dist/publish-metrics-handler.handler
