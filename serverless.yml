@@ -11,6 +11,7 @@ provider:
     IS_DEBUG_LOG_ENABLED: true
 
 plugins:
+  - '@uptime.app/serverless-plugin-sqs-from-sns'
   - serverless-export-env
   - serverless-iam-roles-per-function
   - serverless-jetpack
@@ -44,6 +45,14 @@ custom:
     automatic: true
     number: 1
 
+  messageBusTopicArn: ${cf:${self:provider.stage}-message-bus.MessageBusTopicArn}
+
 functions:
   publishMetric:
     handler: dist/publish-metrics-handler.handler
+
+  captureAndPrintSqsEvent:
+    handler: dist/capture-and-print-sqs-event-handler.handler
+    events:
+      - sqs-from-sns:
+          topicArn: ${self:custom.messageBusTopicArn}

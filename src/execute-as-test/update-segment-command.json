@@ -1,0 +1,266 @@
+{
+    "id": "a0170c74-2c18-491a-a830-df5ae432ee14",
+    "type": "UpdateSegment",
+    "payload": {
+        "segmentId": "bf2970b2-8f5a-472e-af9f-339667b040f5",
+        "type": "put-in-action",
+        "subSegments": [
+            {
+                "type": "favourite-quote",
+                "markdown": "\"It's all very well to think the meaning of life is happiness, but what happens when you're unhappy? Happiness is a great side effect. When it comes, accept it gratefully. But it's fleeting and unpredictable.\" \\[Jordan Peterson\\]",
+                "cards": [
+                    {
+                        "markdown": "\"It's all very well to think the meaning of life is happiness, but what happens when you're unhappy? Happiness is a great side effect. When it comes, accept it gratefully. But it's fleeting and unpredictable.\" \\[Jordan Peterson\\]"
+                    }
+                ],
+                "keywords": [],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            },
+            {
+                "type": "in-a-nutshell",
+                "markdown": "12 Rules for Life is a stern, story-based, entertaining self-help manual for young people, that lays out a set of simple principles, which can help us become more disciplined, behave better, act with integrity, and balance our lives while enjoying them as much as we can. This card was added in the CMS!",
+                "cards": [
+                    {
+                        "markdown": "12 Rules for Life is a stern, story-based, entertaining self-help manual for young people, that lays out a set of simple principles, which can help us become more disciplined, behave better, act with integrity, and balance our lives while enjoying them as much as we can."
+                    },
+                    {
+                        "markdown": "This card was added in the CMS!"
+                    }
+                ],
+                "keywords": [],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            },
+            {
+                "type": "introduction",
+                "markdown": "Four words every writer is dying to hear at least once in life: \"One million copies sold,\" but you wouldn't expect to hear them four months after the publication of your second book.  Then again, Jordan Peterson's 12 Rules For Life isn't just a book.  As for his first one, Peterson spent years collecting and refining the ideas that would create a sort of blueprint for a good life. This time, however, the book didn't flop and sell less than 500 copies.\n\nSince its publication in the January and Peterson's accompanying world tour, 12 Rules For Life completely exploded, dominating bestseller lists around the globe.  Whether he just struck the right nerve at the right time, or put his finger on true significance and meaning, only time will tell, but with thousands of people messaging him how the book's changed their lives, chances are that it's the latter.",
+                "cards": [
+                    {
+                        "markdown": "Four words every writer is dying to hear at least once in life: \"One million copies sold,\" but you wouldn't expect to hear them four months after the publication of your second book."
+                    },
+                    {
+                        "markdown": " Then again, Jordan Peterson's 12 Rules For Life isn't just a book."
+                    },
+                    {
+                        "markdown": " As for his first one, Peterson spent years collecting and refining the ideas that would create a sort of blueprint for a good life. This time, however, the book didn't flop and sell less than 500 copies."
+                    },
+                    {
+                        "markdown": "Since its publication in the January and Peterson's accompanying world tour, 12 Rules For Life completely exploded, dominating bestseller lists around the globe."
+                    },
+                    {
+                        "markdown": " Whether he just struck the right nerve at the right time, or put his finger on true significance and meaning, only time will tell, but with thousands of people messaging him how the book's changed their lives, chances are that it's the latter."
+                    }
+                ],
+                "keywords": [],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            },
+            {
+                "type": "insight-one",
+                "title": "Before you judge the world, take responsibility for your own life",
+                "markdown": "Life isn't fair. We all learn that one way or other. Some of us sooner, some later, some in small ways, some from terrifying blows. But we all realize it eventually.\n\nLike the Russian writer Leo Tolstoy, who, in his short, philosophical piece, A Confession, concluded there are only four reasonable responses to the absurdity of life…\n\n1.  Ignorance, like a child refusing to accept reality.\n2.  Pleasure, like an addict on the hedonic treadmill.\n3.  Suicide.\n4.  Holding on, despite everything.\n\nEven though he concluded suicide was the most honest answer, Tolstoy himself chose the last option, forever struggling on. This tells you a lot about his and Jordan Peterson's beliefs about a good life: No matter how unfair life gets, you should never blame the world. There's always someone who's suffered worse than you. Like Viktor Frankl, for example.\n\nBesides, even though the future may sometimes look bleak, if you can focus on taking responsibility and keeping your own house clean, so to speak, you'll find the bad times will pass.",
+                "cards": [
+                    {
+                        "markdown": "Before you judge the world, take responsibility for your own life"
+                    },
+                    {
+                        "markdown": "Life isn't fair. We all learn that one way or other."
+                    },
+                    {
+                        "markdown": "Some of us sooner, some later, some in small ways, some from terrifying blows. But we all realize it eventually."
+                    },
+                    {
+                        "markdown": "Like the Russian writer Leo Tolstoy, who, in his short, philosophical piece, A Confession, concluded there are only four reasonable responses to the absurdity of life…"
+                    },
+                    {
+                        "markdown": "1.  Ignorance, like a child refusing to accept reality.\n2.  Pleasure, like an addict on the hedonic treadmill.\n3.  Suicide.\n4.  Holding on, despite everything."
+                    },
+                    {
+                        "markdown": "Even though he concluded suicide was the most honest answer, Tolstoy himself chose the last option, forever struggling on."
+                    },
+                    {
+                        "markdown": "This tells you a lot about his and Jordan Peterson's beliefs about a good life: No matter how unfair life gets, you should never blame the world."
+                    },
+                    {
+                        "markdown": "There's always someone who's suffered worse than you. Like Viktor Frankl, for example."
+                    },
+                    {
+                        "markdown": "Besides, even though the future may sometimes look bleak, if you can focus on taking responsibility and keeping your own house clean, so to speak, you'll find the bad times will pass."
+                    }
+                ],
+                "actions": [
+                    {
+                        "title": "Count your blessings.",
+                        "markdown": "There’s plenty of things to be grateful for, but it can be hard to remember them on a daily basis. Begin a gratitude journal, and write down three things each day that you feel lucky to have.",
+                        "cards": [
+                            {
+                                "markdown": "There’s plenty of things to be grateful for, but it can be hard to remember them on a daily basis. Begin a gratitude journal, and write down three things each day that you feel lucky to have."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "philosophy",
+                    "mindfulness",
+                    "happiness"
+                ],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            },
+            {
+                "type": "insight-two",
+                "title": "Care for yourself like you would for a loved one",
+                "markdown": "Have you ever gotten a prescription from the doctor and thought: \"Naaa, I don't need that?\" Over one third of people do it regularly. According to Jordan Peterson, it's neither smart nor smug. It's a subversive form of self-punishment. We do it a lot and, as a result, tend to take better care of others than ourselves.\n\nPeterson suggests this is a consequence of our inability to deal with the insanity of life. Just like Adam and Eve had to taste the forbidden fruit of knowledge, we too indulge in our dark sides from time to time and thus, feel we deserve punishment. But, as with the unfairness of life, we all got thrown out of the Garden of Eden. Like Yin and Yang, we all carry both light and dark inside us. One can't exist without the other.\n\nThat means instead of just striving for either one, we should seek balance. This is why his second rule is to care for yourself like you would care for a loved one: do what is best for you, even though it might not always make you happy.",
+                "cards": [
+                    {
+                        "markdown": "Care for yourself like you would for a loved one"
+                    },
+                    {
+                        "markdown": "Have you ever gotten a prescription from the doctor and thought: \"Naaa, I don't need that?\""
+                    },
+                    {
+                        "markdown": "Over one third of people do it regularly. According to Jordan Peterson, it's neither smart nor smug. It's a subversive form of self-punishment."
+                    },
+                    {
+                        "markdown": "We do it a lot and, as a result, tend to take better care of others than ourselves."
+                    },
+                    {
+                        "markdown": "Peterson suggests this is a consequence of our inability to deal with the insanity of life."
+                    },
+                    {
+                        "markdown": "Just like Adam and Eve had to taste the forbidden fruit of knowledge, we too indulge in our dark sides from time to time and thus, feel we deserve punishment. But, as with the unfairness of life, we all got thrown out of the Garden of Eden."
+                    },
+                    {
+                        "markdown": "Like Yin and Yang, we all carry both light and dark inside us. One can't exist without the other."
+                    },
+                    {
+                        "markdown": "That means instead of just striving for either one, we should seek balance."
+                    },
+                    {
+                        "markdown": "This is why his second rule is to care for yourself like you would care for a loved one: do what is best for you, even though it might not always make you happy."
+                    }
+                ],
+                "actions": [
+                    {
+                        "title": "Be your own best friend.",
+                        "markdown": "Next time you find yourself in an upsetting situation, imagine what you’d do if your friend approached you with the same problem. Write out your responses, or even say it out loud. Practice this self-kindness often, and become your own cheerleader.",
+                        "cards": [
+                            {
+                                "markdown": "Next time you find yourself in an upsetting situation, imagine what you’d do if your friend approached you with the same problem. Write out your responses, or even say it out loud. Practice this self-kindness often, and become your own cheerleader."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "mindfulness",
+                    "selfcare"
+                ],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            },
+            {
+                "type": "insight-three",
+                "title": "Seek meaning through sacrifice, not happiness through pleasure",
+                "markdown": "Balancing your light and your dark side can take many different forms. Sometimes, it may be staying in bed to get healthy, even though you want to work. Other times, it might mean staying late at work on a Friday. However it looks, it always involves choosing meaning by making a sacrifice, rather than temporary happiness by choosing pleasure.\n\nJordan Peterson says this is a great coping mechanism, because it helps balance your life between drowning in hedonism and being so righteous it drives you mad. Of course not all sacrifices are equal. Those you make for personal gain, like working overtime to pay for a vacation, hold less meaning than those you make for the greater good, like volunteering on a Saturday.\n\nEven though it might feel like it when you do it, sacrifice is never really about giving up rewards. It's about deferring them until you can get something even better, usually a feeling of whole-ness or contentment. As such, it's also great willpower training.\n\nHere's an analogy Peterson makes. The Lotus flower starts out at the very bottom of the lake, drenched in darkness. Inch by inch, it grows its way towards the surface, until eventually, it breaks through and into the sunlight. There must be worse ways to spend a life than to be a Lotus flower.",
+                "cards": [
+                    {
+                        "markdown": "Seek meaning through sacrifice, not happiness through pleasure"
+                    },
+                    {
+                        "markdown": "Balancing your light and your dark side can take many different forms."
+                    },
+                    {
+                        "markdown": "Sometimes, it may be staying in bed to get healthy, even though you want to work. Other times, it might mean staying late at work on a Friday."
+                    },
+                    {
+                        "markdown": "However it looks, it always involves choosing meaning by making a sacrifice, rather than temporary happiness by choosing pleasure."
+                    },
+                    {
+                        "markdown": "Jordan Peterson says this is a great coping mechanism, because it helps balance your life between drowning in hedonism and being so righteous it drives you mad."
+                    },
+                    {
+                        "markdown": "Of course not all sacrifices are equal."
+                    },
+                    {
+                        "markdown": "Those you make for personal gain, like working overtime to pay for a vacation, hold less meaning than those you make for the greater good, like volunteering on a Saturday."
+                    },
+                    {
+                        "markdown": "Even though it might feel like it when you do it, sacrifice is never really about giving up rewards."
+                    },
+                    {
+                        "markdown": "It's about deferring them until you can get something even better, usually a feeling of whole-ness or contentment. As such, it's also great willpower training."
+                    },
+                    {
+                        "markdown": "Here's an analogy Peterson makes. The Lotus flower starts out at the very bottom of the lake, drenched in darkness. Inch by inch, it grows its way towards the surface, until eventually, it breaks through and into the sunlight."
+                    },
+                    {
+                        "markdown": "There must be worse ways to spend a life than to be a Lotus flower."
+                    }
+                ],
+                "actions": [
+                    {
+                        "title": "Act in the interest of your future self, not just your present.",
+                        "markdown": "Set out each day to lighten the load for ‘future’ you. What choices can you make today that you’ll thank yourself for tomorrow?",
+                        "cards": [
+                            {
+                                "markdown": "Set out each day to lighten the load for ‘future’ you. What choices can you make today that you’ll thank yourself for tomorrow?"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "mindfulness",
+                    "happiness",
+                    "selfcare"
+                ],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            },
+            {
+                "type": "conclusion",
+                "markdown": "12 Rules for Life is full of stories, science, myths, a broad mix of engaging ways to get Jordan Peterson's message across. It's mainly targeted at male millennials, but don't let that stop you. There's something for everyone in 12 Rules For Life.",
+                "cards": [
+                    {
+                        "markdown": "12 Rules for Life is full of stories, science, myths, a broad mix of engaging ways to get Jordan Peterson's message across. It's mainly targeted at male millennials, but don't let that stop you. There's something for everyone in 12 Rules For Life."
+                    }
+                ],
+                "keywords": [],
+                "source": {
+                    "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+                    "type": "book"
+                }
+            }
+        ],
+        "source": {
+            "id": "4b03fba2-868a-43fa-a391-083c27e835cc",
+            "type": "book"
+        }
+    },
+    "transactionId": "dd9c8c3c-81bb-4a79-ad28-4b4deb6c996e",
+    "causationId": "dd9c8c3c-81bb-4a79-ad28-4b4deb6c996e",
+    "requestId": "dd9c8c3c-81bb-4a79-ad28-4b4deb6c996e",
+    "invocationId": "4288712f-6fa1-4869-9a8f-01623c69c359",
+    "correlationIds": {
+        "userId": "aad6153f-5db1-50d7-8fa9-cfc5ff14568e",
+        "draftHackId": "71369fa7-b450-50e2-8a93-8b36afff000c",
+        "hackId": "6f8ddcc7-dc83-552b-a3ee-c7dd9cc5e31a",
+        "sourceId": "4b03fba2-868a-43fa-a391-083c27e835cc"
+    },
+    "_lambda": "hack-service-staging-publishHack:v$LATEST",
+    "source": "hack-service-staging-publishHack:v$LATEST",
+    "timestamp": 1613131606733,
+    "schemaVersion": 1
+}
