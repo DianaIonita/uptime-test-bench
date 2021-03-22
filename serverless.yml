@@ -9,15 +9,18 @@ provider:
   deploymentBucket: ${ssm:serverless-deployment-bucket}
   environment:
     IS_DEBUG_LOG_ENABLED: true
+    MESSAGE_BUS_ARN: ${self:custom.messageBusTopicArn}
 
 plugins:
   - '@uptime.app/serverless-plugin-sqs-from-sns'
+  - '@uptime.app/serverless-plugin-service-gateway'
   - serverless-export-env
   - serverless-iam-roles-per-function
   - serverless-jetpack
   - serverless-plugin-aws-alerts
   - serverless-prune-plugin
   - serverless-pseudo-parameters
+  - serverless-api-gateway-caching
 
 custom:
   alerts:
@@ -47,12 +50,38 @@ custom:
 
   messageBusTopicArn: ${cf:${self:provider.stage}-message-bus.MessageBusTopicArn}
 
+  authorizerId: ${cf:${self:provider.stage}-user-service.AuthorizerId}
+  serviceGateway:
+    apiId: ${cf:${self:provider.stage}-api-gateway.ApiId}
+    parentId: ${cf:${self:provider.stage}-api-gateway.RootResourceId}
+    servicePath: test-bench
+
+  apiGatewayCaching:
+    enabled: true
+    ttlInSeconds: 300
+
 functions:
   publishMetric:
-    handler: dist/publish-metrics-handler.handler
+    handler: dist/lambdas/publish-metrics-handler.handler
 
   captureAndPrintSqsEvent:
-    handler: dist/capture-and-print-sqs-event-handler.handler
+    handler: dist/lambdas/capture-and-print-sqs-event-handler.handler
     events:
       - sqs-from-sns:
           topicArn: ${self:custom.messageBusTopicArn}
+
+  printEndpointRequest:
+    handler: dist/lambdas/print-endpoint-request-handler.handler
+    events:
+      - http:
+          path: /print-request
+          method: get
+          integration: lambda
+          authorizer: 
+            type: CUSTOM
+            authorizerId: ${self:custom.authorizerId}
+          caching:
+            enabled: true
+            cacheKeyParameters:
+              - name: integration.request.header.rolesValue
+                mappedFrom: method.request.requestContext.authorizer.rolesJson

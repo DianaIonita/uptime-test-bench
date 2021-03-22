@@ -9,5 +9,8 @@ module.exports = {
     testPathIgnorePatterns: [
         '<rootDir>/dist/',
         '/node_modules/'
+    ],
+    setupFiles: [
+        'dotenv/config'
     ]
 };

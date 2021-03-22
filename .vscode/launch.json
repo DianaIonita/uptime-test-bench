@@ -16,6 +16,16 @@
             "windows": {
                 "program": "${workspaceFolder}/node_modules/jest/bin/jest",
             }
+        },
+        {
+            "name": "diff-drafts",
+            "request": "launch",
+            "type": "node",
+            "program": "${workspaceFolder}/src/scripts/diff-drafts.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ]
         }
     ]
 }
