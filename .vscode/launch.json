@@ -26,6 +26,42 @@
             "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
             ]
-        }
+        },
+        {
+            "name": "query-prod-dynamo",
+            "request": "launch",
+            "type": "node",
+            "program": "${workspaceFolder}/src/scripts/query-prod-dynamo.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "env": {
+                "AWS_PROFILE": "prod"
+            }
+        },
+        {
+            "name": "query-staging-dynamo",
+            "request": "launch",
+            "type": "node",
+            "program": "${workspaceFolder}/src/scripts/query-staging-dynamo.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "env": {
+                "AWS_PROFILE": "staging"
+            }
+        },
+        {
+            "name": "compare-enriched-v",
+            "request": "launch",
+            "type": "node",
+            "program": "${workspaceFolder}/src/scripts/compare-enriched-hack-versions.ts",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ]
+        },
     ]
 }
